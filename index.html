@@ -20,11 +20,11 @@
               <p style="text-align:center">
                 <name>Anirudh S Chakravarthy</name>
               </p>
-              <p> I graduated with my Master of Science in Computer Vision (MSCV) at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (CMU), where I was advised by <a href="http://www.cs.cmu.edu/~deva/">Prof. Deva Ramanan</a> at the <a href="https://labs.ri.cmu.edu/argo-ai-center/">CMU Argo AI Center for Autonomous Vehicle Research</a>. 
+              <p> I graduated with my Master of Science in Computer Vision (MSCV) at the <a href="https://www.ri.cmu.edu/">Robotics Institute</a>, <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (CMU). My research focussed on discovering novel objects under an open-world and I was advised by <a href="http://www.cs.cmu.edu/~deva/">Prof. Deva Ramanan</a>. 
 
               </p>
               <p>
-                Previously, I completed my undergraduate degree in Computer Science at <a href="https://www.bits-pilani.ac.in/" >BITS Pilani</a>, India. I interned at <a href="https://vcg.seas.harvard.edu/">Harvard VCG</a> under the supervision of <a href="https://vcg.seas.harvard.edu/people/hanspeter-pfister">Prof. Hanspeter Pfister</a> where I worked on improving mask quality for video instance segmentation and published work at CVPR’21 and CVPR’22. I also worked with <a href="https://vision.ai.illinois.edu/narendra-ahuja/">Prof. Narendra Ahuja</a> at <a href="https://vision.ai.illinois.edu/">UIUC CVRL</a>  on detecting vital signs from RGB videos. My work at the <a href="https://www.nus.edu.sg/">National University of Singapore</a> with <a href="https://www.comp.nus.edu.sg/~mohan/">Prof. Mohan Kankanhalli</a> involved detecting and purifying adversarial attacks using contrastive learning methods.
+                Previously, I completed my undergraduate degree in Computer Science at <a href="https://www.bits-pilani.ac.in/" >BITS Pilani</a>, India. I had interned at <a href="https://vcg.seas.harvard.edu/">Harvard VCG</a> under the supervision of <a href="https://vcg.seas.harvard.edu/people/hanspeter-pfister">Prof. Hanspeter Pfister</a> where I worked on improving mask quality for video instance segmentation and published work at CVPR’21 and CVPR’22. I also worked with <a href="https://vision.ai.illinois.edu/narendra-ahuja/">Prof. Narendra Ahuja</a> at <a href="https://vision.ai.illinois.edu/">UIUC CVRL</a> on detecting vitals signs from videos.
 
               </p>
               
@@ -75,13 +75,55 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
-              <p>
-                My current research at CMU and Argo AI is focused on discovering novel objects in an open-world setting. 
-              </p>
+              <!-- <p> -->
+                <!-- My current research at CMU and Argo AI is focused on discovering novel objects in an open-world setting.  -->
+              <!-- </p> -->
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ddp_image'>
+                  <img src='images/lipsow_teaser.png' width="180"></div>
+                <img src='images/lipsow_teaser.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function ddp_start() {
+                  document.getElementById('ddp_image').style.opacity = "1";
+                }
+        
+                function ddp_stop() {
+                  document.getElementById('ddp_image').style.opacity = "0";
+                }
+                ddp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Lidar Panoptic Segmentation in an Open World</papertitle>
+              </a>
+              <br>
+              <strong>Anirudh Chakravarthy*</strong>,
+              <a href="https://g-meghana-reddy.github.io">Meghana Reddy Ganesina*</a>,
+              <a href="https://peiyunh.github.io">Peiyun Hu</a>, 
+              <a href="https://dvl.in.tum.de/team/lealtaixe/">Laura Leal-Taixé</a>, 
+              <a href="https://aimerykong.github.io/">Shu Kong</a>, 
+              <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a>, 
+              <a href="https://aljosaosep.github.io">Aljosa Osep</a>
+              <br>
+              <em>Under Review</em>, 2022
+              <br>
+              <a href="https://mscvprojects.ri.cmu.edu/2022team1/">[project page]</a>
+              
+              <p></p>
+              <p>
+               We introduce a new problem setting, Lidar Panoptic Segmentation in an Open World (LiPSOW). We also establish evaluation protocols to evaluate methods under LiPSOW. We propose our method, Hierarchical LiDAR Panoptic Segmentation (HLPS), which combines geometric clustering and lidar semantic segmentation to achieve strong performance on LiPSOW.
+            </p>
+          </td>
+        </tr>
 
           <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -175,7 +217,7 @@
             
             <p></p>
             <p>
-              We identify mask quality as a bottleneck for video instance segmentation. To overcome this, we propose an attention-based network to propagate missing object instances. Our method sig- nificantly outperforms previous state-of-the-art algorithms using the Mask R-CNN backbone, by achieving 36.0% mAP on the YouTube-VIS benchmark.
+              We identify mask quality as a bottleneck for video instance segmentation. To overcome this, we propose an attention-based network to propagate missing object instances. Our method significantly outperforms previous state-of-the-art algorithms using the Mask R-CNN backbone, by achieving 36.0% mAP on the YouTube-VIS benchmark.
           </p>
         </td>
       </tr>
